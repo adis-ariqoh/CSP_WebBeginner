@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <h1 align="center">Ini adalah Form</h1>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td><label for="txtuser">Username</label></td>
+                <td><input type="text" name="txtuser" id="" placeholder="Masukkan Username" pattern="[A-Za-z  ]"></td>
+            </tr>    
+            <tr>
+                <td><label for="txtpass">Password</label></td>
+                <td><input type="password" name="txtpass" id="" placeholder="Masukkan Password" pattern="{6-15}"></td>
+            </tr> 
+            <tr>
+                <td><label for="txtumur">Umur</label></td>
+                <td><input type="number" name="txtumur" id="" placeholder="Masukkan Umur" min="17" max="250"></td>
+            </tr> 
+            <tr>
+                <td><label for="chssx">Jenis Kelamin</label></td>
+                <td><input type="radio" name="jk" id="" checked value="Pr">Pria
+                    <input type="radio" name="jk" id="" value="Wt">Wanita</td>
+            </tr> 
+            <tr>
+                <td><label for="txttgl">Tanggal</label></td>
+                <td><input type="date" name="txttgl" id=""></td>
+            </tr> 
+                <td><label for="chsjur">Jurusan</label></td>
+                <td><select name="chsjur" id="">
+                    <optgroup label="FTD">
+                        <option value="SK">Sistem Komputer</option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="DKV">Desain Komunikasi Visual</option>
+                    </optgroup>
+                    <optgroup label="FEB">
+                        <option value="AK">Akutansi</option>
+                        <option value="MAN">Manajemen</option>
+                    </optgroup>
+                </select></td>
+            </tr> 
+            <tr>
+                <td><label for="txtalmt">Alamat</label></td>
+                <td><textarea name="almt" id="" cols="30" rows="5" placeholder="Masukkan Alamat"></textarea></td>
+            </tr> 
+            <tr>
+                <td><input type="submit" value="Kirim" name="btnkirim"></td>
+                <td><input type="reset" value="batal" name="btnbatal"></td>
+            </tr>              
+        </table>
+    </form>
+   
+</body>
+</html>
